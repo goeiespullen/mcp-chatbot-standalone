@@ -1,0 +1,1 @@
+"""MCP Client for Dashboard Application."""

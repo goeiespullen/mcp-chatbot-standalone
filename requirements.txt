@@ -1,0 +1,4 @@
+# MCP ChatBot - Python Dependencies
+#
+# This chatbot requires Python 3.7+ with asyncio support
+# No external dependencies needed - uses only standard library
