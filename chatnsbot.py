@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-Terminal-based ChatBot that connects to MCP Manager Gateway.
+ChatNSbot - Terminal-based chatbot powered by ChatNS LLM.
 
-This chatbot uses the ChatNS MCP server via the gateway to provide
-an interactive chat experience in the terminal.
+Connects to MCP Manager Gateway to provide an interactive
+chat experience using the ChatNS MCP server.
 """
 
 import sys
@@ -26,12 +26,12 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 
-class MCPChatBot:
-    """Terminal chatbot using MCP Gateway and ChatNS."""
+class ChatNSBot:
+    """ChatNSbot - Terminal interface using MCP Gateway and ChatNS LLM."""
 
     def __init__(self, gateway_host: str = 'localhost', gateway_port: int = 8700):
         """
-        Initialize the chatbot.
+        Initialize ChatNSbot.
 
         Args:
             gateway_host: MCP Gateway hostname
@@ -181,11 +181,11 @@ class MCPChatBot:
     async def run(self):
         """Run the interactive chat loop."""
         print("\n" + "="*80)
-        print("🤖 MCP ChatBot - Terminal Interface")
+        print("🤖 ChatNSbot - Powered by ChatNS LLM")
         print("="*80)
         print("\nCommands:")
         print("  /clear  - Clear conversation history")
-        print("  /quit   - Exit chatbot")
+        print("  /quit   - Exit ChatNSbot")
         print("  /help   - Show this help")
         print("\nType your message and press Enter to chat.\n")
         print("="*80 + "\n")
@@ -211,7 +211,7 @@ class MCPChatBot:
                     elif command == "help":
                         print("\nCommands:")
                         print("  /clear  - Clear conversation history")
-                        print("  /quit   - Exit chatbot")
+                        print("  /quit   - Exit ChatNSbot")
                         print("  /help   - Show this help\n")
                         continue
                     else:
@@ -235,11 +235,11 @@ class MCPChatBot:
 
 async def main():
     """Main entry point."""
-    chatbot = MCPChatBot()
+    chatbot = ChatNSBot()
 
     # Connect to gateway
     if not chatbot.connect():
-        print("\n❌ Failed to start chatbot")
+        print("\n❌ Failed to start ChatNSbot")
         print("Make sure MCP Manager is running with gateway on port 8700")
         sys.exit(1)
 

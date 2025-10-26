@@ -1,7 +1,7 @@
 #!/bin/bash
-# MCP ChatBot - Terminal Interface
+# ChatNSbot - Terminal Interface
 #
-# This script starts the MCP ChatBot that connects to the MCP Manager Gateway
+# This script starts ChatNSbot which connects to the MCP Manager Gateway
 
 cd "$(dirname "$0")"
 
@@ -41,8 +41,8 @@ if ! nc -z localhost 8700 2>/dev/null; then
 fi
 
 echo ""
-echo "🚀 Starting MCP ChatBot..."
+echo "🚀 Starting ChatNSbot..."
 echo ""
 
-# Run the chatbot
-python3 chatbot.py "$@"
+# Run ChatNSbot
+python3 chatnsbot.py "$@"

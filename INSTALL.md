@@ -11,8 +11,8 @@ Choose your platform:
 sudo apt install python3 python3-pip
 
 # Download chatbot
-git clone https://github.com/goeiespullen/mcp-chatbot-standalone.git
-cd mcp-chatbot-standalone
+git clone https://github.com/goeiespullen/chatnsbot-standalone.git
+cd chatnsbot-standalone
 
 # Make executable
 chmod +x run.sh
@@ -36,17 +36,17 @@ chmod +x run.sh
 
 **Option A - With Git:**
 ```cmd
-git clone https://github.com/goeiespullen/mcp-chatbot-standalone.git
-cd mcp-chatbot-standalone
+git clone https://github.com/goeiespullen/chatnsbot-standalone.git
+cd chatnsbot-standalone
 ```
 
 **Option B - Download ZIP:**
-1. Go to: https://github.com/goeiespullen/mcp-chatbot-standalone
+1. Go to: https://github.com/goeiespullen/chatnsbot-standalone
 2. Click "Code" → "Download ZIP"
-3. Extract to folder (e.g., `C:\mcp-chatbot-standalone`)
+3. Extract to folder (e.g., `C:\chatnsbot-standalone`)
 4. Open Command Prompt:
    ```cmd
-   cd C:\mcp-chatbot-standalone
+   cd C:\chatnsbot-standalone
    ```
 
 ### Step 3: Run
@@ -66,8 +66,8 @@ brew install python3
 # Or download from: https://www.python.org/downloads/macos/
 
 # Download chatbot
-git clone https://github.com/goeiespullen/mcp-chatbot-standalone.git
-cd mcp-chatbot-standalone
+git clone https://github.com/goeiespullen/chatnsbot-standalone.git
+cd chatnsbot-standalone
 
 # Make executable
 chmod +x run.sh
@@ -100,7 +100,7 @@ Before running the chatbot:
 
 **"Python not found"**
 - Reinstall Python with "Add to PATH" checked
-- Or use full path: `C:\Python39\python.exe chatbot.py`
+- Or use full path: `C:\Python39\python.exe chatnsbot.py`
 
 **More help:** See [README.md](README.md)
 
@@ -115,7 +115,7 @@ cd /path/to/mcp-manager-standalone
 run.bat   # Windows
 
 # Terminal 2: Start Chatbot
-cd /path/to/mcp-chatbot-standalone
+cd /path/to/chatnsbot-standalone
 ./run.sh  # Linux/macOS
 run.bat   # Windows
 ```
@@ -130,5 +130,5 @@ run.bat   # Windows
 ## Support
 
 - Full documentation: [README.md](README.md)
-- Issues: https://github.com/goeiespullen/mcp-chatbot-standalone/issues
+- Issues: https://github.com/goeiespullen/chatnsbot-standalone/issues
 - MCP Manager: https://github.com/goeiespullen/mcp-manager-standalone

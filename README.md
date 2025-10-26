@@ -1,4 +1,4 @@
-# MCP Terminal ChatBot
+# ChatNSbot - Terminal Chatbot
 
 A simple terminal-based chatbot that connects to MCP Manager Gateway and uses ChatNS LLM for interactive conversations.
 
@@ -80,31 +80,31 @@ sudo dnf install python3 python3-pip
 sudo pacman -S python python-pip
 ```
 
-#### 2. Download MCP ChatBot
+#### 2. Download ChatNSbot
 
 ```bash
 # Clone from GitHub
-git clone https://github.com/goeiespullen/mcp-chatbot-standalone.git
-cd mcp-chatbot-standalone
+git clone https://github.com/goeiespullen/chatnsbot-standalone.git
+cd chatnsbot-standalone
 
 # Or download and extract ZIP
-wget https://github.com/goeiespullen/mcp-chatbot-standalone/archive/refs/heads/main.zip
+wget https://github.com/goeiespullen/chatnsbot-standalone/archive/refs/heads/main.zip
 unzip main.zip
-cd mcp-chatbot-standalone-main
+cd chatnsbot-standalone-main
 ```
 
 #### 3. Make script executable
 
 ```bash
-chmod +x run.sh chatbot.py
+chmod +x run.sh chatnsbot.py
 ```
 
-#### 4. Start the chatbot
+#### 4. Start ChatNSbot
 
 ```bash
 ./run.sh
 # Or directly:
-python3 chatbot.py
+python3 chatnsbot.py
 ```
 
 ---
@@ -123,24 +123,24 @@ python3 chatbot.py
 python --version
 ```
 
-#### 2. Download MCP ChatBot
+#### 2. Download ChatNSbot
 
 **Option A: Using Git (if installed)**
 ```cmd
-git clone https://github.com/goeiespullen/mcp-chatbot-standalone.git
-cd mcp-chatbot-standalone
+git clone https://github.com/goeiespullen/chatnsbot-standalone.git
+cd chatnsbot-standalone
 ```
 
 **Option B: Download ZIP**
-1. Go to https://github.com/goeiespullen/mcp-chatbot-standalone
+1. Go to https://github.com/goeiespullen/chatnsbot-standalone
 2. Click "Code" → "Download ZIP"
-3. Extract ZIP to a folder (e.g., `C:\mcp-chatbot-standalone`)
+3. Extract ZIP to a folder (e.g., `C:\chatnsbot-standalone`)
 4. Open Command Prompt and navigate to folder:
    ```cmd
-   cd C:\mcp-chatbot-standalone
+   cd C:\chatnsbot-standalone
    ```
 
-#### 3. Start the chatbot
+#### 3. Start ChatNSbot
 
 **Option A: Using batch script**
 ```cmd
@@ -149,7 +149,7 @@ run.bat
 
 **Option B: Direct Python**
 ```cmd
-python chatbot.py
+python chatnsbot.py
 ```
 
 ---
@@ -177,31 +177,31 @@ brew install python3
 python3 --version
 ```
 
-#### 2. Download MCP ChatBot
+#### 2. Download ChatNSbot
 
 ```bash
 # Clone from GitHub
-git clone https://github.com/goeiespullen/mcp-chatbot-standalone.git
-cd mcp-chatbot-standalone
+git clone https://github.com/goeiespullen/chatnsbot-standalone.git
+cd chatnsbot-standalone
 
 # Or download ZIP
-curl -L -o chatbot.zip https://github.com/goeiespullen/mcp-chatbot-standalone/archive/refs/heads/main.zip
+curl -L -o chatbot.zip https://github.com/goeiespullen/chatnsbot-standalone/archive/refs/heads/main.zip
 unzip chatbot.zip
-cd mcp-chatbot-standalone-main
+cd chatnsbot-standalone-main
 ```
 
 #### 3. Make script executable
 
 ```bash
-chmod +x run.sh chatbot.py
+chmod +x run.sh chatnsbot.py
 ```
 
-#### 4. Start the chatbot
+#### 4. Start ChatNSbot
 
 ```bash
 ./run.sh
 # Or directly:
-python3 chatbot.py
+python3 chatnsbot.py
 ```
 
 ---
@@ -210,7 +210,7 @@ python3 chatbot.py
 
 ### Starting the Chatbot
 
-**Before starting the chatbot**, ensure MCP Manager is running:
+**Before starting ChatNSbot**, ensure MCP Manager is running:
 
 **Linux/macOS:**
 ```bash
@@ -226,17 +226,17 @@ cd C:\path\to\mcp-manager-standalone
 run.bat
 ```
 
-**Then start the chatbot:**
+**Then start ChatNSbot:**
 
 **Linux/macOS:**
 ```bash
-cd /path/to/mcp-chatbot-standalone
+cd /path/to/chatnsbot-standalone
 ./run.sh
 ```
 
 **Windows:**
 ```cmd
-cd C:\path\to\mcp-chatbot-standalone
+cd C:\path\to\chatnsbot-standalone
 run.bat
 ```
 
@@ -244,7 +244,7 @@ run.bat
 
 ```
 ================================================================================
-🤖 MCP ChatBot - Terminal Interface
+🤖 ChatNSbot - Terminal Interface
 ================================================================================
 
 Commands:
@@ -285,7 +285,7 @@ You: /quit
 
 ```
 ┌──────────────────┐
-│  chatbot.py      │  Terminal Interface
+│  chatnsbot.py      │  Terminal Interface
 │  (User Input)    │
 └────────┬─────────┘
          │
@@ -310,7 +310,7 @@ You: /quit
 
 ### How it Works
 
-1. **User input** → chatbot.py receives message
+1. **User input** → chatnsbot.py receives message
 2. **Create message** → Add to conversation history
 3. **Call chat_completion** via MCP Gateway (port 8700)
 4. **ChatNS processes** with full conversation context
@@ -362,7 +362,7 @@ run.bat
    - If not, click "Start" button
 
 2. **Wrong model name** in chatbot configuration
-   - Edit `chatbot.py` line 105
+   - Edit `chatnsbot.py` line 105
    - Ensure model is set to `"gpt-4.1-mini"`
 
 3. **Network issue** between gateway and ChatNS server
@@ -379,7 +379,7 @@ run.bat
 sudo apt install python3
 
 # Or use full path
-/usr/bin/python3 chatbot.py
+/usr/bin/python3 chatnsbot.py
 ```
 
 **Windows:**
@@ -388,7 +388,7 @@ REM Make sure Python is in PATH
 REM Re-run Python installer and check "Add Python to PATH"
 
 REM Or use full path
-C:\Python39\python.exe chatbot.py
+C:\Python39\python.exe chatnsbot.py
 ```
 
 **macOS:**
@@ -397,7 +397,7 @@ C:\Python39\python.exe chatbot.py
 brew install python3
 
 # Or use macOS system Python
-/usr/bin/python3 chatbot.py
+/usr/bin/python3 chatnsbot.py
 ```
 
 ---
@@ -406,7 +406,7 @@ brew install python3
 
 ```bash
 # Make scripts executable
-chmod +x run.sh chatbot.py
+chmod +x run.sh chatnsbot.py
 
 # Then run
 ./run.sh
@@ -442,7 +442,7 @@ taskkill /PID PID /F
 
 ### Changing Gateway Host/Port
 
-Edit `chatbot.py` line 238:
+Edit `chatnsbot.py` line 238:
 
 ```python
 # Default: localhost:8700
@@ -456,7 +456,7 @@ chatbot = MCPChatBot(gateway_host='192.168.1.100', gateway_port=8700)
 
 ### Changing Model Settings
 
-Edit `chatbot.py` lines 103-108:
+Edit `chatnsbot.py` lines 103-108:
 
 ```python
 result = self.client.call_tool(
@@ -479,10 +479,10 @@ If MCP Manager is running on a remote machine:
 
 **Linux/macOS:**
 ```bash
-# Edit chatbot.py or use environment variable
+# Edit chatnsbot.py or use environment variable
 export MCP_GATEWAY_HOST=192.168.1.100
 export MCP_GATEWAY_PORT=8700
-python3 chatbot.py
+python3 chatnsbot.py
 ```
 
 **Windows:**
@@ -490,7 +490,7 @@ python3 chatbot.py
 REM Set environment variables
 set MCP_GATEWAY_HOST=192.168.1.100
 set MCP_GATEWAY_PORT=8700
-python chatbot.py
+python chatnsbot.py
 ```
 
 ---
@@ -560,7 +560,7 @@ Part of the ChatNS Summer School project.
 
 ## Support
 
-- **Issues:** https://github.com/goeiespullen/mcp-chatbot-standalone/issues
+- **Issues:** https://github.com/goeiespullen/chatnsbot-standalone/issues
 - **MCP Manager:** https://github.com/goeiespullen/mcp-manager-standalone
 
 ---

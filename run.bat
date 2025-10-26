@@ -1,6 +1,6 @@
 @echo off
-REM MCP ChatBot - Terminal Interface (Windows)
-REM This script starts the MCP ChatBot that connects to the MCP Manager Gateway
+REM ChatNSbot - Terminal Interface (Windows)
+REM This script starts ChatNSbot which connects to the MCP Manager Gateway
 
 cd /d "%~dp0"
 
@@ -38,14 +38,14 @@ if errorlevel 1 (
 )
 
 echo.
-echo 🚀 Starting MCP ChatBot...
+echo 🚀 Starting ChatNSbot...
 echo.
 
-REM Run the chatbot
-python chatbot.py %*
+REM Run ChatNSbot
+python chatnsbot.py %*
 
 if errorlevel 1 (
     echo.
-    echo ❌ Chatbot exited with error
+    echo ❌ ChatNSbot exited with error
     pause
 )
